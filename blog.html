@@ -86,17 +86,129 @@
                         <h2>Giscus: Comentarios impulsados por GitHub</h2>
                         <p>En este ejemplo, estamos utilizando <strong>Giscus</strong>. Es un sistema que utiliza las
                             "Discusiones" de GitHub para almacenar los comentarios de este blog. Es gratis, seguro y
-                            perfecto para desarrolladores.</p>
+                            <!DOCTYPE html>
+                            <html lang="es">
 
-                        <p>¡Pruébalo abajo! 👇 Deja un comentario y verás cómo funciona.</p>
-                    </div>
-                </article>
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Blog | WebDeployPro</title>
+                                <link rel="stylesheet" href="styles.css">
+                                <link rel="preconnect" href="https://fonts.googleapis.com">
+                                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                                <link
+                                    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+                                    rel="stylesheet">
+                                <style>
+                                    /* Blog specific styles */
+                                    .blog-post {
+                                        background: var(--card-bg);
+                                        padding: 40px;
+                                        border-radius: 20px;
+                                        border: 1px solid rgba(255, 255, 255, 0.05);
+                                        margin-bottom: 40px;
+                                    }
 
-                <!-- Sección de Comentarios -->
-                <div class="comments-section">
-                    <p>&copy; 2024 WebDeployPro. Todos los derechos reservados.</p>
-                </div>
-                </footer>
-</body>
+                                    .blog-header {
+                                        margin-bottom: 30px;
+                                    }
 
-</html>
+                                    .blog-meta {
+                                        color: var(--primary-color);
+                                        font-size: 0.9rem;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    .blog-content {
+                                        color: #cbd5e1;
+                                        line-height: 1.8;
+                                    }
+
+                                    .blog-content h2 {
+                                        color: white;
+                                        margin: 30px 0 15px;
+                                    }
+
+                                    .comments-section {
+                                        margin-top: 60px;
+                                        padding-top: 40px;
+                                        border-top: 1px solid rgba(255, 255, 255, 0.1);
+                                    }
+                                </style>
+                            </head>
+
+                            <body>
+                                <header class="header">
+                                    <nav class="nav container">
+                                        <a href="index.html" class="logo">WebDeploy<span>Pro</span></a>
+                                        <ul class="nav-list">
+                                            <li><a href="index.html">Inicio</a></li>
+                                            <li><a href="index.html#servicios">Servicios</a></li>
+                                            <li><a href="#" class="active">Blog</a></li>
+                                            <li><a href="index.html#contacto" class="btn-primary">Contactar</a></li>
+                                        </ul>
+                                    </nav>
+                                </header>
+
+                                <main>
+                                    <section class="hero" style="padding-bottom: 40px;">
+                                        <div class="container hero-content">
+                                            <h1>Nuestro <span class="gradient-text">Blog</span></h1>
+                                            <p>Noticias, tutoriales y novedades sobre desarrollo web.</p>
+                                        </div>
+                                    </section>
+
+                                    <section class="section">
+                                        <div class="container" style="max-width: 800px;">
+                                            <article class="blog-post">
+                                                <header class="blog-header">
+                                                    <div class="blog-meta">22 Noviembre, 2024 • Tutoriales</div>
+                                                    <h1>¿Cómo tener comentarios en una web estática?</h1>
+                                                </header>
+                                                <div class="blog-content">
+                                                    <p>Muchas personas creen que necesitan un servidor costoso y bases
+                                                        de datos complejas para tener
+                                                        un sistema de comentarios en su blog. ¡Nada más lejos de la
+                                                        realidad!</p>
+
+                                                    <h2>La magia de las APIs</h2>
+                                                    <p>Gracias a servicios modernos, podemos conectar nuestra web
+                                                        estática (HTML/CSS) con "cerebros"
+                                                        externos que guardan la información por nosotros.</p>
+
+                                                    <h2>Giscus: Comentarios impulsados por GitHub</h2>
+                                                    <p>En este ejemplo, estamos utilizando <strong>Giscus</strong>. Es
+                                                        un sistema que utiliza las
+                                                        "Discusiones" de GitHub para almacenar los comentarios de este
+                                                        blog. Es gratis, seguro y
+                                                        perfecto para desarrolladores.</p>
+
+                                                    <p>¡Pruébalo abajo! 👇 Deja un comentario y verás cómo funciona.</p>
+                                                </div>
+                                            </article>
+
+                                            <!-- Sección de Comentarios -->
+                                            <div class="comments-section">
+                                                <h3>Comentarios</h3>
+                                                <!-- Configuración de Giscus -->
+                                                <script src="https://giscus.app/client.js"
+                                                    data-repo="tilisaraomarket/WebDeployPro" data-repo-id="R_kgDOQazRnA"
+                                                    data-category="General" data-category-id="DIC_kwDOQazRnM4CyE8l"
+                                                    data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                                                    data-emit-metadata="0" data-input-position="bottom"
+                                                    data-theme="preferred_color_scheme" data-lang="es"
+                                                    crossorigin="anonymous" async>
+                                                    </script>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </main>
+
+                                <footer class="footer">
+                                    <div class="container">
+                                        <p>&copy; 2024 WebDeployPro. Todos los derechos reservados.</p>
+                                    </div>
+                                </footer>
+                            </body>
+
+                            </html>
