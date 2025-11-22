@@ -4,108 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | WebDeployPro</title>
+    <title>Tu Sitio Web Profesional | Diseño y Despliegue</title>
+    <meta name="description"
+        content="Servicios profesionales de diseño web y despliegue. Llevamos tu negocio a internet con sitios rápidos, modernos y efectivos.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Blog specific styles */
-        .blog-post {
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            margin-bottom: 40px;
-        }
-
-        .blog-header {
-            margin-bottom: 30px;
-        }
-
-        .blog-meta {
-            color: var(--primary-color);
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
-
-        .blog-content {
-            color: #cbd5e1;
-            line-height: 1.8;
-        }
-
-        .blog-content h2 {
-            color: white;
-            margin: 30px 0 15px;
-        }
-
-        .comments-section {
-            margin-top: 60px;
-            padding-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-    </style>
 </head>
 
 <body>
     <header class="header">
         <nav class="nav container">
-            <a href="index.html" class="logo">WebDeploy<span>Pro</span></a>
+            <a href="#" class="logo">WebDeploy<span>Pro</span></a>
             <ul class="nav-list">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#servicios">Servicios</a></li>
-                <li><a href="#" class="active">Blog</a></li>
-                <li><a href="index.html#contacto" class="btn-primary">Contactar</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#contacto" class="btn-primary">Contactar</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero" style="padding-bottom: 40px;">
+        <section id="inicio" class="hero">
             <div class="container hero-content">
-                <h1>Nuestro <span class="gradient-text">Blog</span></h1>
-                <p>Noticias, tutoriales y novedades sobre desarrollo web.</p>
+                <h1>Lleva tu Negocio al <span class="gradient-text">Siguiente Nivel</span></h1>
+                <p>Diseño web profesional y despliegue optimizado. Nos encargamos de la tecnología para que tú te
+                    encargues de tu negocio.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn-primary">Empezar Ahora</a>
+                    <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+                </div>
+            </div>
+            <div class="hero-bg-glow"></div>
+        </section>
+
+        <section id="servicios" class="services section">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon">🎨</div>
+                        <h3>Diseño Moderno</h3>
+                        <p>Sitios web atractivos, responsivos y diseñados para convertir visitantes en clientes.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">🚀</div>
+                        <h3>Despliegue Rápido</h3>
+                        <p>Configuración profesional en la nube. Tu sitio online en tiempo récord y con alta
+                            disponibilidad.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">🛠️</div>
+                        <h3>Mantenimiento</h3>
+                        <p>Actualizaciones, seguridad y soporte técnico para que tu web siempre funcione perfecta.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container" style="max-width: 800px;">
-                <article class="blog-post">
-                    <header class="blog-header">
-                        <div class="blog-meta">22 Noviembre, 2024 • Tutoriales</div>
-                        <h1>¿Cómo tener comentarios en una web estática?</h1>
-                    </header>
-                    <div class="blog-content">
-                        <p>Muchas personas creen que necesitan un servidor costoso y bases de datos complejas para tener
-                            un sistema de comentarios en su blog. ¡Nada más lejos de la realidad!</p>
-
-                        <h2>La magia de las APIs</h2>
-                        <p>Gracias a servicios modernos, podemos conectar nuestra web estática (HTML/CSS) con "cerebros"
-                            externos que guardan la información por nosotros.</p>
-
-                        <h2>Giscus: Comentarios impulsados por GitHub</h2>
-                        <p>En este ejemplo, estamos utilizando <strong>Giscus</strong>. Es un sistema que utiliza las
-                            "Discusiones" de GitHub para almacenar los comentarios de este blog. Es gratis, seguro y
-                            perfecto para desarrolladores.</p>
-
-                        <p>¡Pruébalo abajo! 👇 Deja un comentario y verás cómo funciona.</p>
+        <section id="precios" class="pricing section">
+            <div class="container">
+                <h2 class="section-title">Planes Simples</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Básico</h3>
+                        <div class="price">$50.000<span>/único</span></div>
+                        <ul>
+                            <li>Diseño One-Page</li>
+                            <li>Hosting Configurado</li>
+                            <li>Dominio .com (1 año)</li>
+                            <li>Soporte Básico</li>
+                        </ul>
+                        <a href="#contacto" class="btn-outline">Elegir Plan</a>
                     </div>
-                </article>
+                    <div class="pricing-card featured">
+                        <h3>Profesional</h3>
+                        <div class="price">$80.000<span>/único</span></div>
+                        <ul>
+                            <li>Hasta 5 Páginas</li>
+                            <li>SEO Optimizado</li>
+                            <li>Formulario de Contacto</li>
+                            <li>Integración WhatsApp</li>
+                            <li>Soporte Prioritario</li>
+                        </ul>
+                        <a href="#contacto" class="btn-primary">Elegir Plan</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Empresarial</h3>
+                        <div class="price">Consultar</div>
+                        <ul>
+                            <li>Diseño a Medida</li>
+                            <li>Funcionalidades Custom</li>
+                            <li>Integraciones API</li>
+                            <li>Mantenimiento Mensual</li>
+                        </ul>
+                        <a href="#contacto" class="btn-outline">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <!-- Sección de Comentarios -->
-                <div class="comments-section">
-                    <h3>Comentarios</h3>
-                    <p style="margin-bottom: 20px; color: #94a3b8; font-size: 0.9rem;">
-                        Nota: Para que esto funcione en tu sitio real, debes configurar el repositorio en Giscus.app.
-                        Aquí se muestra el widget de ejemplo.
-                    </p>
-
-                    <!-- Configuración de Giscus -->
-                    <script src="https://giscus.app/client.js" data-repo="giscus/giscus-component"
-                        data-repo-id="R_kgDOGEqwYw" data-category="General" data-category-id="DIC_kwDOGEqwY84CA89K"
-                        data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0"
-                        data-input-position="bottom" data-theme="dark" data-lang="es" crossorigin="anonymous" async>
-                        </script>
+        <section id="contacto" class="contact section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Hablemos de tu Proyecto</h2>
+                        <p>¿Listo para tener presencia online? Escríbenos y te asesoramos sin compromiso.</p>
+                        <ul class="contact-details">
+                            <li>📧 contacto@webdeploypro.com</li>
+                            <li>📱 +54 9 11 1234 5678</li>
+                        </ul>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" rows="4" placeholder="Cuéntanos sobre tu proyecto"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Enviar Mensaje</button>
+                    </form>
                 </div>
             </div>
         </section>
